@@ -1,3 +1,36 @@
 /* CSS Entry Point */
 
 @import "font-awesome";
+
+.header {
+	border: 1px solid black;
+	height: 100px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.hero-image {
+	border: 1px dotted black;
+	margin: 10px 0;
+	height: 150px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.content-section {
+	border: 1px solid black;
+	.latest-news {
+
+	}
+	.todays-special {
+
+	}
+	.our-location {
+
+	}
+}//end content-section
+
+
