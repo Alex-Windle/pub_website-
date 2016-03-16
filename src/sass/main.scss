@@ -13,7 +13,7 @@
 
 .hero-image {
 	border: 1px dotted black;
-	margin: 10px 0;
+	margin: 10px 0px;
 	height: 150px;
 	display: flex;
 	justify-content: center;
@@ -22,15 +22,66 @@
 
 .content-section {
 	border: 1px solid black;
+	margin: 10px 0px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
 	.latest-news {
-
+	border: 1px dotted black;
+	margin: 10px;
 	}
 	.todays-special {
-
+	border: 1px dotted black;
+	margin: 10px;
 	}
 	.our-location {
+	border: 1px dotted black;
+	margin: 10px;
 
 	}
 }//end content-section
+
+.main {
+margin: 10px 0px;
+display: flex;
+flex-direction: row;
+	.tabs-section {
+		border: 1px solid black;
+		.our-story {
+		border: 1px dotted black;
+		margin: 10px;
+		padding: 10px;
+		}
+		.menu {
+		border: 1px dotted black;
+		margin: 10px;
+		padding: 10px;
+		}
+		.reservations {
+		border: 1px dotted black;
+		margin: 10px;
+		padding: 10px;
+		}
+		}//end tabs-section
+	.food-photos {
+		background-color: lighten(green, 60%);
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		img {
+		margin: 20px;
+		}//end img
+		}//end food-photos
+}//end main
+
+footer {
+	border: 1px solid black;
+	margin: 10px 0px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+
 
 
