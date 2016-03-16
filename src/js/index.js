@@ -3,6 +3,9 @@ import $ from 'jquery';
 
 import specials from './specials';
 
+
+///////////////menu created below
+
 var $menu = $('.menu');
 
 var url = "https://json-data.herokuapp.com/restaurant/menu/3";
@@ -19,7 +22,9 @@ $.ajax(url).then(function(object){
 
 });
 
-console.log(specials.beers);
+
+
+/////////////Daily special generated below
 
 var $todaysSpecialHtml = $('.todays-special');
 
@@ -27,10 +32,10 @@ function displaySpecial (specials){
 	var day = new Date();
 	day = day.getDay();
 
-	$todaysSpecialHtml.append(`<div>Beer: ${specials.beers[day].item}</div>
-								<div>Price: $${specials.beers[day].price}</div>
-								<div>Style: ${specials.beers[day].style}</div>
-								<div>${specials.beers[day].description}</div>
+	$todaysSpecialHtml.append(`<div class="todays-special-title">Beer: ${specials.beers[day].item}</div>
+								<div class="todays-special-price">Price: $${specials.beers[day].price}</div>
+								<div class="todays-special-style">Style: ${specials.beers[day].style}</div>
+								<div class="todays-special-description">${specials.beers[day].description}</div>
 								`);
 }
 
