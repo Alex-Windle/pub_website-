@@ -11,7 +11,7 @@
 p{
 	font-family: 'EB Garamond', serif;
 }
-h1,h2,h3,h4,h5,h6{
+h1,h2,h3,h4,h5,h6, .tab-names{
 	font-family: 'Quicksand', sans-serif;
 }
 
@@ -89,7 +89,7 @@ justify-content: space-between;
 			label.tab-names{
 				border: 1px solid black;
 				border-radius: 5px 5px 0 0 ;
-				border-bottom: none;
+				border-bottom: 1px dotted black;
 				padding: 10px 15px 10px 15px;
 				background-color: #DCDBDB;
 				transition: all 0.3s ease-in-out;
@@ -103,6 +103,7 @@ justify-content: space-between;
 			  background-color: white;
 			  font-size: 1.2em;
 			  height: 1.2em;
+			  border-bottom: hidden;
 			}
 
 			div.tab-content{
