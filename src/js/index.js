@@ -15,17 +15,36 @@ $.ajax(url).then(function(object){
 	var beerTitles = object.Beer.map(function({item, price, description}){
 		return `<div class="menu-item">
 					<div class="itemTitle">${item}</div>
+					
 					<div class="item-descrip-price-line">
 						<div class="itemDescription">${description}</div>
 				    	<div class="itemPrice">${price}</div>
+				    	<div class="itemInfoBlock"></div>
 				    </div>
 				</div>`;
 	})
 
 	$menu.append(beerTitles);
 
-});
+////////////// Entree items below 
 
+	var entreeTitles = object.entrees.map(function({item, description, price}){
+
+	return `
+			<div class="entree-item">
+				<div class="entree-name">${item}</div>
+
+				<div class="entree-descrip-price-line">
+					<div class="entree-description">${description}</div>
+					<div class="entree-price">${price}</div>
+				</div>
+			</div>`;
+	})//end var entreeTitles
+
+	$menu.append(entreeTitles);
+////////////// Entree icon bar below
+
+}); //end ajax
 
 //////////////////create news below
 

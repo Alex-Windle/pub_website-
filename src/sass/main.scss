@@ -2,10 +2,16 @@
 
 @import "font-awesome";
 
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
 p{
 	font-family: 'EB Garamond', serif;
 }
-h1,h2,h3,h4,h5,h6{
+h1,h2,h3,h4,h5,h6, .tab-names{
 	font-family: 'Quicksand', sans-serif;
 }
 
@@ -44,27 +50,23 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .content-section {
-	border: 1px solid black;
+	// border: 1px solid black;
 	margin: 10px 0px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
-	.latest-news {
-	border: 1px dotted black;
-	margin: 10px;
-	width: 30%;
+	.info{
+		border: 1px solid black;
+		margin: 20px;
+		padding: 20px;
+		width: 28%;
+		h3{
+			margin-bottom: 30px;
+			border-bottom: 1px dotted grey;
+		}
 	}
-	.todays-special {
-	border: 1px dotted black;
-	margin: 10px;
-	width: 30%;
-	}
-	.our-location {
-	border: 1px dotted black;
-	margin: 10px;
-	width: 30%;
 
-	}
+	
 }//end content-section
 
 .main {
@@ -73,9 +75,10 @@ display: flex;
 flex-direction: row;
 justify-content: space-between;
 	.tabs-section {
-		border: 1px solid black;
+		// border: 1px solid black;
 		width: 75%;
 		position: relative;
+		margin: 30px;
 		li{
 			float: left;
 			display: block;
@@ -89,7 +92,7 @@ justify-content: space-between;
 			label.tab-names{
 				border: 1px solid black;
 				border-radius: 5px 5px 0 0 ;
-				border-bottom: none;
+				border-bottom: 1px dotted black;
 				padding: 10px 15px 10px 15px;
 				background-color: #DCDBDB;
 				transition: all 0.3s ease-in-out;
@@ -101,29 +104,38 @@ justify-content: space-between;
 
 			input:checked ~ label{
 			  background-color: white;
+			  font-size: 1.2em;
+			  height: 1.2em;
+			  border-bottom: hidden;
 			}
 
 			div.tab-content{
 				display: none;
 			    width: 100%;
-			    left:0;
-			    top: 53px;
+			    left:10px;
+			    top: 60px;
 			    position: absolute;
 			}
 		}
 		.our-story, {
-		border: 1px dotted black;
-		margin: 10px;
+		margin: 10px 10px 10px 0;
 		padding: 10px;
+		box-shadow: -2px 2px -2px #888888;
 		}
 		.menu {
-		border: 1px dotted black;
+		// border: 1px dotted black;
 		margin: 10px;
 		padding: 10px;
 			#menu-content{
 			border: 1px solid red;
+			margin-top: 20px;
 			.menu-item {
 				.itemTitle{
+				font-weight: bold;
+				margin-top: 20px;
+				}
+				.itemInfoBlock{
+
 				}
 				.item-descrip-price-line {
 				border: 1px solid green;
@@ -139,10 +151,30 @@ justify-content: space-between;
 					}
 				}//end item-descrip-price-line
 			}//end menu-item
+			.entree-item {
+
+			.entree-name{
+			font-weight: bold;
+			margin-top: 20px;
+			}//end entree-name
+			.entree-descrip-price-line {
+			border: 1px solid green;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+					.entree-description{
+					width: 400px;
+					}
+					.entree-price{
+
+					}
+			}//end entree descrip price line
+			}//end entree-item
 			}//end menu-content
-		}//end menu
+		}//end menu 
+		}//end tabs-section
 		.reservations {
-		border: 1px dotted black;
+		// border: 1px dotted black;
 		margin: 10px;
 		padding: 10px;
 		form > input, form > label, form > select{
@@ -150,11 +182,10 @@ justify-content: space-between;
 		}
 		}
 		.reviews {
-		border: 1px dotted black;
+		// border: 1px dotted black;
 		margin: 10px;
 		padding: 10px;
 		}
-		}//end tabs-section
 	.food-photos {
 		background-color: #e5d1bd;
 		display: flex;
@@ -163,8 +194,9 @@ justify-content: space-between;
 		img {
 		margin: 20px;
 		}//end img
-		}//end food-photos
+	} //end food photos
 }//end main
+
 
 footer {
 	border: 1px solid black;
