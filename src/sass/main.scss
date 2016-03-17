@@ -2,6 +2,13 @@
 
 @import "font-awesome";
 
+p{
+	font-family: 'EB Garamond', serif;
+}
+h1,h2,h3,h4,h5,h6{
+	font-family: 'Quicksand', sans-serif;
+}
+
 .header {
 	border: 1px solid black;
 	height: 100px;
@@ -9,6 +16,9 @@
 	flex-direction: row;
 	justify-content: space-around;
 	align-items: center;
+	h1{
+		float:left;
+	}
 	i{
 		font-size: 2em;
 		padding: 0 2px 0 2px;
