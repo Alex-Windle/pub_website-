@@ -12,6 +12,8 @@ h1,h2,h3,h4,h5,h6{
 .header {
 	border: 1px solid black;
 	height: 100px;
+	background-color: #2b4a2d;
+	color: white;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
@@ -28,6 +30,7 @@ h1,h2,h3,h4,h5,h6{
 .logo h1 {
 	font-family: 'Alegreya SC', serif;
 	font-size: 30px;
+
 }
 
 .hero-image {
