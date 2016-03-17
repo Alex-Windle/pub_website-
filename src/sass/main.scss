@@ -90,8 +90,14 @@ flex-direction: row;
 		padding: 10px;
 			#menu-content{
 			border: 1px solid red;
+			margin-top: 20px;
 			.menu-item {
 				.itemTitle{
+				font-weight: bold;
+				margin-top: 20px;
+				}
+				.itemInfoBlock{
+
 				}
 				.item-descrip-price-line {
 				border: 1px solid green;
@@ -107,8 +113,28 @@ flex-direction: row;
 					}
 				}//end item-descrip-price-line
 			}//end menu-item
+			.entree-item {
+
+			.entree-name{
+			font-weight: bold;
+			margin-top: 20px;
+			}//end entree-name
+			.entree-descrip-price-line {
+			border: 1px solid green;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+					.entree-description{
+					width: 400px;
+					}
+					.entree-price{
+
+					}
+			}//end entree descrip price line
+			}//end entree-item
 			}//end menu-content
-		}//end menu
+		}//end menu 
+		}//end tabs-section
 		.reservations {
 		border: 1px dotted black;
 		margin: 10px;
@@ -122,7 +148,6 @@ flex-direction: row;
 		margin: 10px;
 		padding: 10px;
 		}
-		}//end tabs-section
 	.food-photos {
 		background-color: lighten(green, 60%);
 		display: flex;
@@ -131,8 +156,9 @@ flex-direction: row;
 		img {
 		margin: 20px;
 		}//end img
-		}//end food-photos
+	} //end food photos
 }//end main
+
 
 footer {
 	border: 1px solid black;
