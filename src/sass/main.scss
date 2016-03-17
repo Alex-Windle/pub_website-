@@ -92,14 +92,20 @@ flex-direction: row;
 			border: 1px solid red;
 			.menu-item {
 				.itemTitle{
-				border: 1px solid green;
 				}
-				.itemPrice{
+				.item-descrip-price-line {
 				border: 1px solid green;
-				}
-				.itemDescription {
-				border: 1px solid green;
-				}
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+					.itemPrice{
+					// border: 1px solid green;
+					}
+					.itemDescription {
+					// border: 1px solid orange;
+					width: 400px;
+					}
+				}//end item-descrip-price-line
 			}//end menu-item
 			}//end menu-content
 		}//end menu

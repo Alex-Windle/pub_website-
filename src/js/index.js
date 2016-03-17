@@ -15,8 +15,10 @@ $.ajax(url).then(function(object){
 	var beerTitles = object.Beer.map(function({item, price, description}){
 		return `<div class="menu-item">
 					<div class="itemTitle">${item}</div>
-					<div class="itemPrice">${price}</div>
-					<div class="itemDescription">${description}</div>
+					<div class="item-descrip-price-line">
+						<div class="itemDescription">${description}</div>
+				    	<div class="itemPrice">${price}</div>
+				    </div>
 				</div>`;
 	})
 
