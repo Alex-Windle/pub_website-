@@ -10,7 +10,13 @@
 
   <div class="header">
   	<div class="logo">Logo</div>
-  	<div class="social-media">Social media area</div>
+  	<div class="social-media">Social media area
+    <i class="fa fa-facebook-square"></i>
+    <i class="fa fa-instagram"></i>
+    <i class="fa fa-twitter-square"></i>
+
+
+    </div>
   </div> 
 
   <div class="hero-image">HERO IMAGE HERE</div>
@@ -21,7 +27,16 @@
 	  <div class="todays-special">Todays special</div>
 
 	  <div class="our-location">Our location
-    	<iframe width="265" height="100" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ5XKr84MD9YgRCbwJhQDwL6s&key=AIzaSyAS4FgxuzBgz_uKvP9fKKhXCY3sHjkHeWY" allowfullscreen></iframe>
+    	<iframe width="265" height="100" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJI_9MVoED9YgRsGdUE7k0QXo&key=AIzaSyAS4FgxuzBgz_uKvP9fKKhXCY3sHjkHeWY" allowfullscreen></iframe>
+
+      <text>123 Pryor St Atlanta, GA 30303   
+      404 123-4567</text>
+
+      <a href="https://www.google.com/maps/dir//33.7515619,-84.389888/@33.7456553,-84.3741474,14z?hl=en-US"alt="Map">Map</a>
+
+      <a href="https://www.google.com/maps/dir//33.7518581,-84.3913382/@33.745167,-84.37488,14z?hl=en-US" alt="Directions">Directions</a>
+
+
       </div>
 
   </div>
@@ -57,14 +72,22 @@
 	  		<input type="radio" name="tabs" id="rez-tab">
     		<label class="label" for="rez-tab">Make a rez</label>
     		<div class="tab-content">
-    			<p>
-    				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-    				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-    				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-    				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    			</p>
+    			<form>
+    				<label for="first-name">First Name</label>
+    				<input id="first-name"></input>
+    				<label for="num-guests">Number of Guests</label>
+    				<input id="num-guests"></input>
+    				<label for="date">Date</label>
+    				<input id="date"></input>
+    				<label for="special-notes">Special Notes</label>
+    				<textarea id="special-notes"></textarea>
+    				<label for="seating-preference">Seating Preference</label>
+    				<select id="seating-preference">
+    					<option>Indoor</option>
+    					<option>Outdoor</option>
+    				</select>
+    				<button>Reserve Table</button>
+    			</form>
     		</div>
 	  	</li>
 	  	<li class="reviews">
@@ -72,14 +95,28 @@
     		<label class="label" for="review-tab">Tell us your thoughts</label>
     		<div class="tab-content">
     			<h3>Reviews</h3>
-    			<p>
-    				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-    				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-    				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-    				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    			</p>
+    			<div id="disqus_thread"></div>
+					<script>
+					/**
+					* RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+					* LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+					*/
+					/*
+					var disqus_config = function () {
+					this.page.url = PAGE_URL; // Replace PAGE_URL with your page's canonical URL variable
+					this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+					};
+					*/
+					(function() { // DON'T EDIT BELOW THIS LINE
+					var d = document, s = d.createElement('script');
+
+					s.src = '//pubonpryor.disqus.com/embed.js';
+
+					s.setAttribute('data-timestamp', +new Date());
+					(d.head || d.body).appendChild(s);
+					})();
+					</script>
+					<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
     		</div>
 	  	</li>
 	  </ul> <!-- end .tabs-section -->

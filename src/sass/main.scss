@@ -53,7 +53,7 @@ flex-direction: row;
 			float: left;
 			display: block;
 
-			input{
+			input[type=radio]{
 				position: absolute;
 				left: -5000px;
 
@@ -107,6 +107,9 @@ flex-direction: row;
 		border: 1px dotted black;
 		margin: 10px;
 		padding: 10px;
+		form > input, form > label{
+			display: block;
+		}
 		}
 		.reviews {
 		border: 1px dotted black;
