@@ -9,6 +9,10 @@
 	flex-direction: row;
 	justify-content: space-around;
 	align-items: center;
+	i{
+		font-size: 2em;
+		padding: 0 2px 0 2px;
+	}
 }
 
 .hero-image {
@@ -30,14 +34,17 @@
 	.latest-news {
 	border: 1px dotted black;
 	margin: 10px;
+	width: 30%;
 	}
 	.todays-special {
 	border: 1px dotted black;
 	margin: 10px;
+	width: 30%;
 	}
 	.our-location {
 	border: 1px dotted black;
 	margin: 10px;
+	width: 30%;
 
 	}
 }//end content-section
