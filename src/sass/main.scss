@@ -53,7 +53,7 @@ flex-direction: row;
 			float: left;
 			display: block;
 
-			input{
+			input[type=radio]{
 				position: absolute;
 				left: -5000px;
 
