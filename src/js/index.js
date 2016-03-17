@@ -6,7 +6,7 @@ import specials from './specials';
 
 ///////////////menu created below
 
-var $menu = $('.menu');
+var $menu = $('#menu-content');
 
 var url = "https://json-data.herokuapp.com/restaurant/menu/3";
 

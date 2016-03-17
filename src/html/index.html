@@ -20,16 +20,53 @@
 
 	  <div class="todays-special">Todays special</div>
 
-	  <div class="our-location">Our location</div>
-    <img src="https://www.google.com/maps/search/https:%2F%2Fwww.google.com%2Fmaps%2Fembed%2Fv1%2Fplace%3Fq%3Dthe%2520iron%2520yard%2520atlanta%26key%3D...%22/@33.7947108,-84.3279091,15z/data=!3m1!4b1" alt="The Pub Restaurant">
+	  <div class="our-location">Our location
+    	<img src="https://www.google.com/maps/search/https:%2F%2Fwww.google.com%2Fmaps%2Fembed%2Fv1%2Fplace%3Fq%3Dthe%2520iron%2520yard%2520atlanta%26key%3D...%22/@33.7947108,-84.3279091,15z/data=!3m1!4b1" alt="The Pub Restaurant">
+      </div>
   </div>
 
   <div class="main">
-	  <div class="tabs-section">
-	  	<div class="our-story">Our story</div>
-	  	<div class="menu">Menu</div>
-	  	<div class="reservations">Make a rez</div>
-	  </div> <!-- end .tabs-section -->
+	  <ul class="tabs-section">
+	  	<li class="our-story">
+	  		<input type="radio" name="tabs" id="story-tab" checked>
+    		<label class="label" for="story-tab">Our story</label>
+    		<div class="tab-content">
+    			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    		</div>
+	  	</li>
+	  	<li class="menu">
+	  		<input type="radio" name="tabs" id="menu-tab">
+    		<label class="label" for="menu-tab">Menu</label>
+    		<div id="menu-content" class="tab-content">
+    			
+    		</div>
+	  	</li>
+	  	<li class="reservations">
+	  		<input type="radio" name="tabs" id="rez-tab">
+    		<label class="label" for="rez-tab">Make a rez</label>
+    		<div class="tab-content">
+    			<p>
+    				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    			</p>
+    		</div>
+	  	</li>
+	  </ul> <!-- end .tabs-section -->
 
 	  <div class="food-photos">
 	  	<img src="http://lorempixel.com/200/200">
