@@ -59,9 +59,13 @@ flex-direction: row;
 
 			}
 
-			label{
+			label.tab-names{
 				border: 1px solid black;
-				padding: 15px;
+				border-radius: 5px 5px 0 0 ;
+				border-bottom: none;
+				padding: 10px 15px 10px 15px;
+				background-color: #DCDBDB;
+				transition: all 0.3s ease-in-out;
 			}
 			input:checked ~ div.tab-content{
 			  display: block;
@@ -69,13 +73,14 @@ flex-direction: row;
 			}
 
 			input:checked ~ label{
-			  border-bottom: none;
+			  background-color: white;
 			}
 
 			div.tab-content{
 				display: none;
 			    width: 100%;
 			    left:0;
+			    top: 53px;
 			    position: absolute;
 			}
 		}
@@ -93,7 +98,7 @@ flex-direction: row;
 		border: 1px dotted black;
 		margin: 10px;
 		padding: 10px;
-		form > input, form > label{
+		form > input, form > label, form > select{
 			display: block;
 		}
 		}
