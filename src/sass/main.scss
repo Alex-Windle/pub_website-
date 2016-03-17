@@ -3,7 +3,7 @@
 @import "font-awesome";
 
 $bodybackgroundcolor: #fdfcd8;
-$boxcolor: #f3ebe2;
+$boxcolor: darken(#f3ebe2, 5%);
 $header-color: #2b4a2d;
 
 *{
@@ -26,6 +26,7 @@ h1,h2,h3,h4,h5,h6, .tab-names{
 
 .header {
 	border: 1px solid black;
+	border-top: 4px dashed black;
 	height: 100px;
 	background-color: #2b4a2d;
 	color: white;
@@ -46,18 +47,18 @@ h1,h2,h3,h4,h5,h6, .tab-names{
 .logo h1 {
 	font-family: 'Alegreya SC', serif;
 	font-size: 30px;
-
 }
 
-.hero-image {
-	border: 1px dotted black;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	img{
-		width: 100%;
-	}
-}
+// .hero-image {
+// 	border: 2px dashed black;
+// 	display: flex;
+// 	justify-content: center;
+// 	margin-top: -4px;
+// 	align-items: center;
+// 	img{
+// 		width: 100%;
+// 	}
+// }
 
 .content-section {
 	// border: 1px solid black;
@@ -68,13 +69,15 @@ h1,h2,h3,h4,h5,h6, .tab-names{
 	flex-direction: row;
 	justify-content: space-around;
 	.info{
-		border: 1px solid black;
+		border: 1px solid $header-color;
+		border-radius: 3px;
+		background-color: $boxcolor;
 		margin: 20px;
 		padding: 20px;
 		width: 28%;
 		h3{
 			margin-bottom: 30px;
-			border-bottom: 1px dotted grey;
+			border-bottom: 1px dotted $header-color;
 		}
 	}
 

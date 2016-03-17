@@ -54,13 +54,7 @@ var $news = $('.latest-news');
 
 $.ajax(newsURL).then(function(object){
 
-	// var latestNews = object.map(function({title, date_published, post}){
-	// 	return `<div class="news-title">${title}</div>
-	// 			<div class="date-published">${date_published}</div>
-	// 			<div class="post">${post}</div>`;
-	// })
-
-	var latestNews = `<div class="news-title">${object.title}</div>
+	var latestNews = `<div class="news-title"><strong>${object.title}</strong></div>
 				<div class="date-published">${object.date_published}</div>
 				<div class="post">${object.post}</div>`;
 
