@@ -4,11 +4,17 @@
 
 $bodybackgroundcolor: #fdfcd8;
 $boxcolor: #f3ebe2;
+$header-color: #2b4a2d;
 
 *{
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+}
+
+html{
+	background: url('../images/pub_hero.png') no-repeat fixed;
+	background-size: 100%;
 }
 
 p{
@@ -55,7 +61,8 @@ h1,h2,h3,h4,h5,h6, .tab-names{
 
 .content-section {
 	// border: 1px solid black;
-	margin: 10px 0px;
+	margin-top: 500px;
+	padding-top: 50px;
 	background-color: $bodybackgroundcolor;
 	display: flex;
 	flex-direction: row;
@@ -75,7 +82,7 @@ h1,h2,h3,h4,h5,h6, .tab-names{
 }//end content-section
 
 .main {
-margin: 10px 0px;
+// margin: 10px 0px;
 background-color: $bodybackgroundcolor;
 display: flex;
 flex-direction: row;
@@ -88,7 +95,7 @@ justify-content: space-between;
 		li{
 			float: left;
 			display: block;
-			background-color: $boxcolor;
+			// background-color: $boxcolor;
 
 			input[type=radio]{
 				position: absolute;
@@ -97,7 +104,7 @@ justify-content: space-between;
 			}
 
 			label.tab-names{
-				border: 1px solid black;
+				// border: 1px solid black;
 				border-radius: 5px 5px 0 0 ;
 				border-bottom: 1px dotted black;
 				padding: 10px 15px 10px 15px;
@@ -110,8 +117,8 @@ justify-content: space-between;
 			}
 
 			input:checked ~ label{
-			  background-color: white;
-			  font-size: 1.2em;
+			  background-color: $boxcolor;
+			  font-size: 1.3em;
 			  height: 1.2em;
 			  border-bottom: hidden;
 			}
@@ -119,9 +126,10 @@ justify-content: space-between;
 			div.tab-content{
 				display: none;
 				background-color: $boxcolor;
+				padding: 25px;
 			    width: 100%;
 			    left:10px;
-			    top: 60px;
+			    top: 49px;
 			    position: absolute;
 			    h2{
 			    	margin-bottom: 15px;
@@ -132,7 +140,7 @@ justify-content: space-between;
 		margin: 10px 10px 10px 0;
 		padding: 10px;
 		box-shadow: -2px 2px -2px #888888;
-		background-color: $boxcolor;
+		// background-color: $boxcolor;
 		}
 		.menu {
 		// border: 1px dotted black;
@@ -140,7 +148,6 @@ justify-content: space-between;
 		padding: 10px;
 			#menu-content{
 			border: 1px solid red;
-			margin-top: 20px;
 			.menu-item {
 				.itemTitle{
 				font-weight: bold;
@@ -216,10 +223,13 @@ justify-content: space-between;
 
 footer {
 	border: 1px solid black;
-	margin: 10px 0px;
+	height: 50px;
+	line-height: 50px;
+	color: white;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
+	background-color: $header-color;
 }
 
 
