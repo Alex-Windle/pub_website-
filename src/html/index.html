@@ -2,14 +2,19 @@
 <html>
 <head>
   <title>TIY Project</title>
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Quicksand|EB+Garamond">
   <link rel="stylesheet" href="css/main.css">
+  <link href='https://fonts.googleapis.com/css?family=Alegreya+SC:400,700' rel='stylesheet' type='text/css'>
 
 </head>
  <body>
   <div class="app">
 
   <div class="header">
-  	<div class="logo">Logo</div>
+  	<div class="logo">
+    <img src="../images/noun_158150_cc.png" height="100">
+    <h1>The Pub on Pryor</h1>
+    </div>
   	<div class="social-media">Social media area
     <i class="fa fa-facebook-square"></i>
     <i class="fa fa-instagram"></i>
@@ -19,15 +24,17 @@
     </div>
   </div> 
 
-  <div class="hero-image">HERO IMAGE HERE</div>
+  <div class="hero-image">
+
+  <img src="../images/pub_hero.png"></div>
 
   <div class="content-section">
-	  <div class="latest-news">Latest News</div>
+	  <div class="latest-news info"><h3>Latest News</h3></div>
 
-	  <div class="todays-special">Todays special</div>
+	  <div class="todays-special info"><h3>Todays special</h3></div>
 
-	  <div class="our-location">Our location
-    	<iframe width="265" height="100" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJI_9MVoED9YgRsGdUE7k0QXo&key=AIzaSyAS4FgxuzBgz_uKvP9fKKhXCY3sHjkHeWY" allowfullscreen></iframe>
+	  <div class="our-location info"><h3>Our location</h3>
+    	<iframe width="100%" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJI_9MVoED9YgRsGdUE7k0QXo&key=AIzaSyAS4FgxuzBgz_uKvP9fKKhXCY3sHjkHeWY" allowfullscreen></iframe>
 
       <text>123 Pryor St Atlanta, GA 30303   
       404 123-4567</text>
@@ -45,8 +52,9 @@
 	  <ul class="tabs-section">
 	  	<li class="our-story">
 	  		<input type="radio" name="tabs" id="story-tab" checked>
-    		<label class="label" for="story-tab">Our story</label>
+    		<label class="label tab-names" for="story-tab">Our story</label>
     		<div class="tab-content">
+    			<h3>Our Story</h3>
     			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
     			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
     			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -63,15 +71,17 @@
 	  	</li>
 	  	<li class="menu">
 	  		<input type="radio" name="tabs" id="menu-tab">
-    		<label class="label" for="menu-tab">Menu</label>
+    		<label class="label tab-names" for="menu-tab">Menu</label>
     		<div id="menu-content" class="tab-content">
+    		<h3>Menu</h3>
     			
     		</div>
 	  	</li>
 	  	<li class="reservations">
 	  		<input type="radio" name="tabs" id="rez-tab">
-    		<label class="label" for="rez-tab">Make a rez</label>
+    		<label class="label tab-names" for="rez-tab">Make a rez</label>
     		<div class="tab-content">
+    			<h3>Make a Reservation</h3>
     			<form>
     				<label for="first-name">First Name</label>
     				<input id="first-name"></input>
@@ -92,7 +102,7 @@
 	  	</li>
 	  	<li class="reviews">
 	  		<input type="radio" name="tabs" id="review-tab">
-    		<label class="label" for="review-tab">Tell us your thoughts</label>
+    		<label class="label tab-names" for="review-tab">Your thoughts</label>
     		<div class="tab-content">
     			<h3>Reviews</h3>
     			<div id="disqus_thread"></div>
@@ -122,10 +132,10 @@
 	  </ul> <!-- end .tabs-section -->
 
 	  <div class="food-photos">
-	  	<img src="http://fillmurray.com/200/200">
-	  	<img src="http://fillmurray.com/200/200">
-	  	<img src="http://fillmurray.com/200/200">
-	  	<img src="http://fillmurray.com/200/200">
+	  	<img src="../images/pubfood_salad.png" width="200" height="200">
+	  	<img src="../images/pubfood_steak.png" width="200" height="200">
+	  	<img src="./images/pubfood_brats.png" width="200" height="200">
+	  	<img src="../images/pubfood_potatoes.png" width="200" height="200">
 	  </div> <!-- end .food-photos -->
   </div> <!-- end .main -->
 
