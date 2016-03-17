@@ -13,11 +13,12 @@
 
 .hero-image {
 	border: 1px dotted black;
-	margin: 10px 0px;
-	height: 150px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	img{
+		width: 100%;
+	}
 }
 
 .content-section {
