@@ -112,6 +112,9 @@ justify-content: space-between;
 			    left:10px;
 			    top: 60px;
 			    position: absolute;
+			    h2{
+			    	margin-bottom: 15px;
+			    }
 			}
 		}
 		.our-story, {
@@ -171,12 +174,16 @@ justify-content: space-between;
 		}//end menu 
 		}//end tabs-section
 		.reservations {
-		// border: 1px dotted black;
-		margin: 10px;
-		padding: 10px;
-		form > input, form > label, form > select{
-			display: block;
-		}
+			// border: 1px dotted black;
+			margin: 10px;
+			padding: 10px;
+			form > input, form > label, form > select{
+				display: block;
+				font-size: 1.2em;
+				
+			}form > input{
+				margin-bottom: 10px;
+			}
 		}
 		.reviews {
 		// border: 1px dotted black;
