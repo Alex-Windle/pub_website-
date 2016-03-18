@@ -274,5 +274,45 @@ footer {
 }
 
 
+///////////media queries to keep content tied to background img
 
+@media (max-width: 1350px){
+	.content-section{
+		margin-top: 400px;
+	}
+}
+@media (max-width: 1140px){
+	.content-section{
+		margin-top: 350px;
+	}
+}
 
+@media (max-width: 1050px){
+	.content-section{
+		margin-top: 300px;
+	}
+}
+
+@media (max-width: 915px){
+	.content-section{
+		margin-top: 250px;
+	}
+}
+
+@media (max-width: 815px){
+	.content-section{
+		margin-top: 200px;
+	}
+}
+
+@media (max-width: 690px){
+	.content-section{
+		margin-top: 150px;
+	}
+}
+
+@media (max-width: 590px){
+	.content-section{
+		margin-top: 125px;
+	}
+}
