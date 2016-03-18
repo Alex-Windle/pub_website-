@@ -85,13 +85,7 @@ var $news = $('.latest-news');
 
 $.ajax(newsURL).then(function(object){
 
-	// var latestNews = object.map(function({title, date_published, post}){
-	// 	return `<div class="news-title">${title}</div>
-	// 			<div class="date-published">${date_published}</div>
-	// 			<div class="post">${post}</div>`;
-	// })
-
-	var latestNews = `<div class="news-title">${object.title}</div>
+	var latestNews = `<div class="news-title"><strong>${object.title}</strong></div>
 				<div class="date-published">${object.date_published}</div>
 				<div class="post">${object.post}</div>`;
 
@@ -107,7 +101,8 @@ function displaySpecial (specials){
 	var day = new Date();
 	day = day.getDay();
 
-	$todaysSpecialHtml.append(`<div class="todays-special-title">Beer: ${specials.beers[day].item}</div>
+	$todaysSpecialHtml.append(`<h2 class="todays-special-title">${specials.beers[day].item}</h2>
+								<img src="${specials.beers[day].imgUrl}" alt="">
 								<div class="todays-special-price">Price: $${specials.beers[day].price}</div>
 								<div class="todays-special-style">Style: ${specials.beers[day].style}</div>
 								<div class="todays-special-description">${specials.beers[day].description}</div>
