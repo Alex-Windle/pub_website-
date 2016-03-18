@@ -75,7 +75,8 @@ h1,h2,h3,h4,h5,h6, .tab-names{
 	flex-direction: row;
 	justify-content: space-around;
 	.info{
-		border: 1px solid $header-color;
+		// border: 3px solid $header-color;
+		border: 3px solid black;
 		border-radius: 3px;
 		background-color: $boxcolor;
 		margin: 20px;
@@ -87,7 +88,7 @@ h1,h2,h3,h4,h5,h6, .tab-names{
 		}
 		img{
 			width: 100%;
-			border: 1px solid black;
+			border: 2px solid black;
 			border-radius: 100%;
 			margin: 20px 0 20px 0;
 		}
