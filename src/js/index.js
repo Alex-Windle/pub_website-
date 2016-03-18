@@ -72,7 +72,8 @@ function displaySpecial (specials){
 	var day = new Date();
 	day = day.getDay();
 
-	$todaysSpecialHtml.append(`<div class="todays-special-title">Beer: ${specials.beers[day].item}</div>
+	$todaysSpecialHtml.append(`<h2 class="todays-special-title">${specials.beers[day].item}</h2>
+								<img src="${specials.beers[day].imgUrl}" alt="">
 								<div class="todays-special-price">Price: $${specials.beers[day].price}</div>
 								<div class="todays-special-style">Style: ${specials.beers[day].style}</div>
 								<div class="todays-special-description">${specials.beers[day].description}</div>

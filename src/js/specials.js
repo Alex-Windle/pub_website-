@@ -33,7 +33,7 @@ export default {
 		price: 10,
 		style: "American Double / Imperial Stout",
 		abv: 8,
-		imgUrl: "placeholder",
+		imgUrl: "http://p-fst2.pixstatic.com/506b0d13fb04d60a6b001298._w.1500_s.fit_.jpg",
 		description: "Considered the world's greatest Belgian Trappist beer. Made by drunk monks so you know it's good. "
 		},
 		{
@@ -51,7 +51,7 @@ export default {
 		price: 10,
 		style: "American Double / Imperial Stout",
 		abv: 8,
-		imgUrl: "placeholder",
+		imgUrl: "http://p-fst2.pixstatic.com/506b0d13fb04d60a6b001298._w.1500_s.fit_.jpg",
 		description: "Considered the world's greatest Belgian Trappist beer. Made by drunk monks so you know it's good. "
 		},
 		{
