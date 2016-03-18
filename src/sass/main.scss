@@ -63,6 +63,7 @@ h1,h2,h3,h4,h5,h6, .tab-names{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
+	flex-wrap: wrap;
 	.info{
 		// border: 3px solid $header-color;
 		border: 3px solid black;
@@ -103,7 +104,7 @@ justify-content: space-between;
 		width: 80%;
 		position: relative;
 		margin: 30px;
-		display: flex;
+		// display: flex;
 		li{
 			float: left;
 			display: block;
@@ -317,13 +318,40 @@ footer {
 
 @media (max-width: 815px){
 	.content-section{
-		margin-top: 200px;
+		// flex-direction: column;	
+		margin: 10px;
+		margin: auto;
+		width: 100%;
+		flex-wrap: wrap;
+		.info{
+			flex-wrap: wrap;
+			width: 100%;
+			position: static;
+		}
+		
 	}
 	.main{
 		flex-direction: column;
+		.tabs-section li{
+			display: block;
+			width: 100%;
+			margin: auto;
+			input, label{
+				display: none;
+			}
+			div.tab-content{
+				display: block;
+				width: 80%;
+				position: relative;
+				#menu-content{
+					display: block;
+									position: relative;
+
+				}
+			}
+		}
 	}
 	.food-photos {
-		order: -5;
 		flex-direction: row;
 		justify-content: space-around;
 	}
