@@ -10,15 +10,6 @@ export default {
 		description: "Rich, intense brew with big complex flavors and a warming finish."
 		},
 		{
-		id: 1,
-		item: "Founders KBS (Kentucky Breakfast Stout",
-		price: 8,
-		style: "American Double / Imperial Stout",
-		abv: 11.2,
-		imgUrl: "https://kingbobyjr.files.wordpress.com/2011/03/beer-95.jpg",
-		description: "This stout is brewed with a hint of coffee and vanilla then aged in oak bourbon barrels for over a year."
-		},
-		{
 		id: 2,
 		item: "King Julius",
 		price: 7,
@@ -27,6 +18,16 @@ export default {
 		imgUrl: "https://craftbeerhaven.files.wordpress.com/2016/02/kingjulius.jpg?w=510",
 		description: "Exceptionally flavorful, juicy, and hop saturated beer while never tiring the palate."
 		},
+		{
+		id: 1,
+		item: "Founders KBS (Kentucky Breakfast Stout",
+		price: 8,
+		style: "American Double / Imperial Stout",
+		abv: 11.2,
+		imgUrl: "https://kingbobyjr.files.wordpress.com/2011/03/beer-95.jpg",
+		description: "This stout is brewed with a hint of coffee and vanilla then aged in oak bourbon barrels for over a year."
+		},
+		
 		{
 		id: 3,
 		item: "Pliny The Elder ",
