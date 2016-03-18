@@ -19,7 +19,6 @@ $.ajax(url).then(function(object){
 					<div class="item-descrip-price-line">
 						<div class="itemDescription">${description}</div>
 				    	<div class="itemPrice">${price}</div>
-				    	<div class="itemInfoBlock"></div>
 				    </div>
 				</div>`;
 	})
@@ -28,23 +27,55 @@ $.ajax(url).then(function(object){
 
 ////////////// Entree items below 
 
-	var entreeTitles = object.entrees.map(function({item, description, price}){
+	var entreeTitles = object.entrees.map(function({item, description, price, allergies, favorite, spicy, vegan}){
+
+	// var $entreeIcon = $('.entree-icon');
+	var $menuTest = $('#menu-content');
+
+
+	var icon = if (allergies > 0) {
+					`<i class="fa fa-exclamation-triangle"></i>`
+
+					// $entreeIcon.append(`<p>ALLERGY</p>`);
+					// $menuTest.append(`<p>ALLERGY</p>`);
+					// console.log("allergies");
+
+				} else if (favorite > 0) {
+					` <i class="fa fa-star"></i>`
+					// $entreeIcon.append(`<p>NO-ALLERGY</p>`);
+					// $menuTest.append(`<p>NO-ALLERGY</p>`);
+					// console.log("no allergies");
+				} else if () {
+
+				} else {
+
+				}
 
 	return `
 			<div class="entree-item">
-				<div class="entree-name">${item}</div>
+				<div class="entree-name-icon-line">
+					<div class="entree-name">${item}</div>
+					<div class="entree-icon">${var icon}</div>
+				</div> 
 
 				<div class="entree-descrip-price-line">
 					<div class="entree-description">${description}</div>
 					<div class="entree-price">${price}</div>
 				</div>
 			</div>`;
-	})//end var entreeTitles
+	}); //function entreeTitles 
 
 	$menu.append(entreeTitles);
-////////////// Entree icon bar below
+					
+					//// Entree icon bar below ////
 
-}); //end ajax
+	//Put your function here that sorts each object in the array by property
+	// props are "allergies" "fav" "spicy" "vegan"
+	      // add a new js file to include templates. EXPORT templates
+	      // add an IMPORT statement to THIS file to pull in templates
+	      // make the JS magic happen!!!!! :-) :-) :-) :-) 
+
+	}); //end ajax
 
 //////////////////create news below
 
@@ -67,8 +98,6 @@ $.ajax(newsURL).then(function(object){
 	$news.append(latestNews);
 
 });
-
-
 
 /////////////Daily special generated below
 
