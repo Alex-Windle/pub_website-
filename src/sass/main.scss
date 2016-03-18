@@ -2,7 +2,7 @@
 
 @import "font-awesome";
 
-$bodybackgroundcolor: #fdfcd8;
+$bodybackgroundcolor: #2b4a2d;
 $boxcolor: darken(#f3ebe2, 5%);
 $header-color: #2b4a2d;
 
@@ -15,10 +15,6 @@ $header-color: #2b4a2d;
 html{
 	background: url('../images/pub_hero.png') no-repeat fixed;
 	background-size: 100%;
-}
-
-.app{
-	background-color: $bodybackgroundcolor;
 }
 
 p{
