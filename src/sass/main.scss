@@ -34,7 +34,7 @@ h1,h2,h3,h4,h5,h6, .tab-names{
 	justify-content: space-around;
 	align-items: center;
 	img{
-		transform: 2s all ease-in-out; 
+		transform: 2s all ease-in-out;
 	}
 	img:hover{
 		transform: rotate(0.10turn);
@@ -54,17 +54,6 @@ h1,h2,h3,h4,h5,h6, .tab-names{
 	font-family: 'Alegreya SC', serif;
 	font-size: 30px;
 }
-
-// .hero-image {
-// 	border: 2px dashed black;
-// 	display: flex;
-// 	justify-content: center;
-// 	margin-top: -4px;
-// 	align-items: center;
-// 	img{
-// 		width: 100%;
-// 	}
-// }
 
 .content-section {
 	// border: 1px solid black;
@@ -92,6 +81,12 @@ h1,h2,h3,h4,h5,h6, .tab-names{
 			border-radius: 100%;
 			margin: 20px 0 20px 0;
 		}
+		div{
+			margin-top: 10px;
+			
+				font-size: 1.1em;
+			}
+		
 	}
 
 	
@@ -169,7 +164,7 @@ justify-content: space-between;
 		margin: 10px;
 		padding: 10px;
 			#menu-content{
-			border: 1px solid red;
+			// border: 1px solid red;
 			.menu-item {
 				.itemTitle{
 				font-weight: bold;
@@ -179,35 +174,45 @@ justify-content: space-between;
 
 				}
 				.item-descrip-price-line {
-				border: 1px solid green;
+				// border: 1px solid green;
 				display: flex;
 				flex-direction: row;
 				justify-content: space-between;
 					.itemPrice{
 					// border: 1px solid green;
+					padding-top: 15px;
 					}
 					.itemDescription {
 					// border: 1px solid orange;
-					width: 400px;
+					width: 700px;
+					padding-top: 15px;
+
 					}
 				}//end item-descrip-price-line
 			}//end menu-item
 			.entree-item {
-
-			.entree-name{
-			font-weight: bold;
-			margin-top: 20px;
-			}//end entree-name
+				margin-top: 20px;
+				.entree-name-icon-line {
+				// border: 3px solid pink;
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				.entree-name{
+				font-weight: bold;
+				// margin-top: 20px;
+				}//end entree-name
+				}//end entree-name-icon-line
 			.entree-descrip-price-line {
-			border: 1px solid green;
+			// border: 1px solid green;
 			display: flex;
 			flex-direction: row;
 			justify-content: space-between;
 					.entree-description{
-					width: 400px;
+					padding-top: 15px;
+					width: 700px;
 					}
 					.entree-price{
-
+					padding-top: 15px;
 					}
 			}//end entree descrip price line
 			}//end entree-item
@@ -235,12 +240,14 @@ justify-content: space-between;
 				padding: 10px;
 				margin-top: 20px;
 				border-radius: 5px;
-				background-color: $header-color;
+				
+				background-color: lighten($header-color, 15%);
 				border: none;
-				color: white;
+				color: black;
+				
 				&:hover{
-					color: black;
-					background-color: lighten($header-color, 15%);
+					color: white;
+					background-color: $header-color;
 					cursor: pointer;
 
 				}
@@ -254,10 +261,11 @@ justify-content: space-between;
 	.food-photos {
 		background-color: $bodybackgroundcolor;
 		display: flex;
+		margin: 30px;
 		flex-direction: column;
 		justify-content: space-around;
 		img {
-		margin: 20px;
+		margin-top: 20px;
 		}//end img
 	} //end food photos
 }//end main
@@ -276,5 +284,45 @@ footer {
 }
 
 
+///////////media queries to keep content tied to background img
 
+@media (max-width: 1350px){
+	.content-section{
+		margin-top: 400px;
+	}
+}
+@media (max-width: 1140px){
+	.content-section{
+		margin-top: 350px;
+	}
+}
 
+@media (max-width: 1050px){
+	.content-section{
+		margin-top: 300px;
+	}
+}
+
+@media (max-width: 915px){
+	.content-section{
+		margin-top: 250px;
+	}
+}
+
+@media (max-width: 815px){
+	.content-section{
+		margin-top: 200px;
+	}
+}
+
+@media (max-width: 690px){
+	.content-section{
+		margin-top: 150px;
+	}
+}
+
+@media (max-width: 590px){
+	.content-section{
+		margin-top: 125px;
+	}
+}
