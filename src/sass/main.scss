@@ -35,11 +35,12 @@ h1,h2,h3,h4,h5,h6, .tab-names{
 	justify-content: space-around;
 	align-items: center;
 	img{
-		transform: 2s all ease-in-out;
+		// transform: 2s all ease-in-out;
+		height: 80px;
 	}
 	img:hover{
 		transform: rotate(0.10turn);
-		transition-duration: 1s;
+		transition-duration: 1.2s;
 	}
 	h1{
 		float:left;
@@ -163,7 +164,7 @@ justify-content: space-between;
 		}
 		.menu {
 		// border: 1px dotted black;
-		margin: 10px;
+		margin-top: 10px;
 		padding: 10px;
 			#menu-content{
 			// border: 1px solid red;
@@ -328,7 +329,10 @@ footer {
 	}
 	.main{
 		flex-direction: column;
-		.tabs-section li{
+		.tabs-section {
+			margin: auto;
+
+			li{
 			display: block;
 			width: 100%;
 			margin: auto;
@@ -337,13 +341,15 @@ footer {
 			}
 			div.tab-content{
 				display: block;
-				width: 80%;
+				width: 100%;
 				position: relative;
-				#menu-content{
-					display: block;
-									position: relative;
+				margin:0;
+				// #menu-content{
+				// 	display: block;
+				// 	position: relative;
 
-				}
+				// }
+			}
 			}
 		}
 	}
@@ -351,11 +357,8 @@ footer {
 		flex-direction: row;
 		justify-content: space-around;
 	}
-	.main .tabs-section, .tab-content{ 
-		width: 100%;
-		margin: 10px;
 
-	}
+	
 }
 
 @media (max-width: 690px){
