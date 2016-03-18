@@ -162,7 +162,7 @@ justify-content: space-between;
 		margin: 10px;
 		padding: 10px;
 			#menu-content{
-			border: 1px solid red;
+			// border: 1px solid red;
 			.menu-item {
 				.itemTitle{
 				font-weight: bold;
@@ -172,35 +172,45 @@ justify-content: space-between;
 
 				}
 				.item-descrip-price-line {
-				border: 1px solid green;
+				// border: 1px solid green;
 				display: flex;
 				flex-direction: row;
 				justify-content: space-between;
 					.itemPrice{
 					// border: 1px solid green;
+					padding-top: 15px;
 					}
 					.itemDescription {
 					// border: 1px solid orange;
-					width: 400px;
+					width: 700px;
+					padding-top: 15px;
+
 					}
 				}//end item-descrip-price-line
 			}//end menu-item
 			.entree-item {
-
-			.entree-name{
-			font-weight: bold;
-			margin-top: 20px;
-			}//end entree-name
+				margin-top: 20px;
+				.entree-name-icon-line {
+				// border: 3px solid pink;
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				.entree-name{
+				font-weight: bold;
+				// margin-top: 20px;
+				}//end entree-name
+				}//end entree-name-icon-line
 			.entree-descrip-price-line {
-			border: 1px solid green;
+			// border: 1px solid green;
 			display: flex;
 			flex-direction: row;
 			justify-content: space-between;
 					.entree-description{
-					width: 400px;
+					padding-top: 15px;
+					width: 700px;
 					}
 					.entree-price{
-
+					padding-top: 15px;
 					}
 			}//end entree descrip price line
 			}//end entree-item
