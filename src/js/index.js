@@ -33,29 +33,27 @@ $.ajax(url).then(function(object){
 	var $menuTest = $('#menu-content');
 
 
-	var icon = if (allergies > 0) {
-					`<i class="fa fa-exclamation-triangle"></i>`
+				// if (allergies > 0) {
+				// 	`<i class="fa fa-exclamation-triangle"></i>`;
+				// 	console.log("allergies");
 
-					// $entreeIcon.append(`<p>ALLERGY</p>`);
-					// $menuTest.append(`<p>ALLERGY</p>`);
-					// console.log("allergies");
-
-				} else if (favorite > 0) {
-					` <i class="fa fa-star"></i>`
-					// $entreeIcon.append(`<p>NO-ALLERGY</p>`);
-					// $menuTest.append(`<p>NO-ALLERGY</p>`);
-					// console.log("no allergies");
-				} else if () {
-
-				} else {
-
-				}
+				// } else if (favorite > 0) {
+				// 	` <i class="fa fa-star"></i>`;
+				// 	console.log("favorite");
+			
+				// } else if (spicy > 0) {
+				// 	`<i class="fa fa-fire"></i>`;
+				// 	console.log("spicy");
+				// } else {
+				// 	`<i class="fa fa-fire"></i>`;
+				// 	console.log("vegan");
+				// }
 
 	return `
 			<div class="entree-item">
 				<div class="entree-name-icon-line">
 					<div class="entree-name">${item}</div>
-					<div class="entree-icon">${var icon}</div>
+					<div class="entree-icon"></div>
 				</div> 
 
 				<div class="entree-descrip-price-line">
