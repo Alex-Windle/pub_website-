@@ -34,6 +34,13 @@ h1,h2,h3,h4,h5,h6, .tab-names{
 	flex-direction: row;
 	justify-content: space-around;
 	align-items: center;
+	img{
+		transform: 2s all ease-in-out; 
+	}
+	img:hover{
+		transform: rotate(0.10turn);
+		transition-duration: 1s;
+	}
 	h1{
 		float:left;
 		line-height: 100px;
@@ -205,6 +212,9 @@ justify-content: space-between;
 				
 			}form > input{
 				margin-bottom: 10px;
+			}
+			button{
+
 			}
 		}
 		.reviews {
