@@ -84,7 +84,7 @@ var $news = $('.latest-news');
 
 $.ajax(newsURL).then(function(object){
 
-	var latestNews = `<div class="news-title"><strong>${object.title}</strong></div>
+	var latestNews = `<h2 class="news-title"><strong>${object.title}</strong></h2>
 				<div class="date-published">${object.date_published}</div>
 				`;
 
