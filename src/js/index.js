@@ -32,28 +32,29 @@ $.ajax(url).then(function(object){
 	// var $entreeIcon = $('.entree-icon');
 	var $menuTest = $('#menu-content');
 
+				var icon = ""; 
 
-				// if (allergies > 0) {
-				// 	`<i class="fa fa-exclamation-triangle"></i>`;
-				// 	console.log("allergies");
+				if (allergies > 0) {
+					icon = "<i class='fa fa-exclamation-triangle' title='Allergy Information: May contain gluten and/or peanut dust.'></i>";
+					console.log("allergies");
 
-				// } else if (favorite > 0) {
-				// 	` <i class="fa fa-star"></i>`;
-				// 	console.log("favorite");
+				} else if (favorite > 0) {
+					icon = "<i class='fa fa-star' title='A Pub on Pryor Favorite!'></i>";
+					console.log("favorite");
 			
-				// } else if (spicy > 0) {
-				// 	`<i class="fa fa-fire"></i>`;
-				// 	console.log("spicy");
-				// } else {
-				// 	`<i class="fa fa-fire"></i>`;
-				// 	console.log("vegan");
-				// }
+				} else if (spicy > 0) {
+					icon = "<i class='fa fa-fire' title='Spicy.'></i>";
+					console.log("spicy");
+				} else {
+					icon = "<i class='fa fa-fire' title='Vegan.'></i>";
+					console.log("vegan");
+				}
 
 	return `
 			<div class="entree-item">
 				<div class="entree-name-icon-line">
 					<div class="entree-name">${item}</div>
-					<div class="entree-icon"></div>
+					<div class="entree-icon">${icon}</div>
 				</div> 
 
 				<div class="entree-descrip-price-line">
