@@ -25,8 +25,9 @@ h1,h2,h3,h4,h5,h6, .tab-names{
 
 .header {
 	border: 1px solid black;
-	border-top: 4px dashed black;
+	// border-top: 4px dashed black;
 	height: 100px;
+	padding-top: 15px;
 	background-color: #2b4a2d;
 	color: white;
 	display: flex;
@@ -42,17 +43,17 @@ h1,h2,h3,h4,h5,h6, .tab-names{
 	}
 	h1{
 		float:left;
-		line-height: 100px;
+		line-height: 80px;
 	}
 	i{
-		font-size: 2em;
+		font-size: 1em;
 		padding: 0 2px 0 2px;
 	}
 }
 
 .logo h1 {
 	font-family: 'Alegreya SC', serif;
-	font-size: 30px;
+	font-size: 40px;
 }
 
 .content-section {
