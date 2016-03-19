@@ -12,8 +12,8 @@ $header-color: #2b4a2d;
 	margin-top: 20px;
 	border-radius: 5px;
 	
-	background-color: lighten($header-color, 15%);
-	border: none;
+	background-color: $boxcolor;
+	border: 2px solid $header-color;
 	color: black;
 	
 	&:hover{
