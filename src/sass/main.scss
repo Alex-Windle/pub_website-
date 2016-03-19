@@ -47,8 +47,12 @@ h1,h2,h3,h4,h5,h6, .tab-names{
 		line-height: 80px;
 	}
 	i{
-		font-size: 1em;
+		font-size: 1.1em;
 		padding: 0 2px 0 2px;
+		&:hover{
+			color: darken(white, 15%);
+			cursor: pointer;
+		}
 	}
 }
 
@@ -89,6 +93,9 @@ h1,h2,h3,h4,h5,h6, .tab-names{
 			margin-top: 10px;
 			font-size: 1.1em;
 			}
+		.todays-special{
+			outline: 5px solid red;
+		}
 		
 	}
 
@@ -331,25 +338,22 @@ footer {
 		flex-direction: column;
 		.tabs-section {
 			margin: auto;
+			width: 97%;
 
 			li{
 			display: block;
 			width: 100%;
 			margin: auto;
-			input, label{
-				display: none;
-			}
-			div.tab-content{
-				display: block;
-				width: 100%;
-				position: relative;
-				margin:0;
-				// #menu-content{
-				// 	display: block;
-				// 	position: relative;
-
-				// }
-			}
+				input:first-of-type, label:first-of-type{
+					display: none;
+				}
+				div.tab-content{
+					display: block;
+					width: 100%;
+					position: static;
+					margin:0;
+					border: 3px solid black;
+				}
 			}
 		}
 	}
