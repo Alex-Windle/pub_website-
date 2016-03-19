@@ -24,17 +24,19 @@ h1,h2,h3,h4,h5,h6, .tab-names{
 }
 
 .header {
-	border: 1px solid black;
-	// border-top: 4px dashed black;
 	height: 100px;
 	padding-top: 15px;
+	padding-left: 5%;
+    padding-right: 5%;
 	background-color: #2b4a2d;
 	color: white;
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
+	justify-content: space-between;
 	align-items: center;
 	img{
+		padding-bottom: 12px;
+    	padding-right: 10px;
 		transform: 2s all ease-in-out;
 	}
 	img:hover{
@@ -42,7 +44,7 @@ h1,h2,h3,h4,h5,h6, .tab-names{
 		transition-duration: 1s;
 	}
 	h1{
-		float:left;
+		float:right;//new
 		line-height: 80px;
 	}
 	i{
@@ -54,6 +56,24 @@ h1,h2,h3,h4,h5,h6, .tab-names{
 .logo h1 {
 	font-family: 'Alegreya SC', serif;
 	font-size: 40px;
+}
+
+.social-media {
+	margin-bottom: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	i {
+	padding: 3px;
+		span {
+		font-family: 'Quicksand', sans-serif;
+		font-size: 14px;
+		}
+		span:before {
+		margin: 4px;
+		content: ' ';
+		}
+	}
 }
 
 .content-section {
