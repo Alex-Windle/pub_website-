@@ -57,6 +57,8 @@ h1,h2,h3,h4,h5,h6, .tab-names{
 	img{
 		// transform: 2s all ease-in-out;
 		height: 80px;
+		transform: rotate(0.0turn);
+		transition-duration: 1.5s;
 	}
 	img:hover{
 		transform: rotate(0.10turn);
