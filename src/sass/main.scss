@@ -6,6 +6,26 @@ $bodybackgroundcolor: #2b4a2d;
 $boxcolor: darken(#f3ebe2, 5%);
 $header-color: #2b4a2d;
 
+@mixin default-button{
+	font-size: 1.5em;
+	padding: 10px;
+	margin-top: 20px;
+	border-radius: 5px;
+	
+	background-color: lighten($header-color, 15%);
+	border: none;
+	color: black;
+	
+	&:hover{
+		color: white;
+		background-color: $header-color;
+		cursor: pointer;
+
+	}
+}
+
+.button { @include default-button;}
+
 *{
 	margin: 0;
 	padding: 0;
@@ -130,6 +150,7 @@ justify-content: space-between;
 				border-bottom: 1px dotted black;
 				padding: 10px 15px 10px 15px;
 				background-color: #DCDBDB;
+				cursor: pointer;
 				transition: all 0.3s ease-in-out;
 			}
 			input:checked ~ div.tab-content{
@@ -240,23 +261,7 @@ justify-content: space-between;
 				width: 50%;
 				height: 80px;
 			}
-			button{
-				font-size: 1.5em;
-				padding: 10px;
-				margin-top: 20px;
-				border-radius: 5px;
-				
-				background-color: lighten($header-color, 15%);
-				border: none;
-				color: black;
-				
-				&:hover{
-					color: white;
-					background-color: $header-color;
-					cursor: pointer;
-
-				}
-			}
+			
 		}
 		.reviews {
 		margin: 10px;
