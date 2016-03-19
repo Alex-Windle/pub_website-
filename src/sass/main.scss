@@ -108,6 +108,7 @@ h1,h2,h3,h4,h5,h6, .tab-names{
 	margin-top: 500px;
 	padding-top: 50px;
 	background-color: $bodybackgroundcolor;
+	font-family: 'EB Garamond', serif;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
@@ -294,7 +295,7 @@ justify-content: space-between;
 			form > input, form > label, form > select{
 				display: block;
 				font-family: 'EB Garamond', serif;
-				font-size: 1.2em;
+				font-size: 1.0em;
 				
 			}form > input{
 				margin-bottom: 10px;
