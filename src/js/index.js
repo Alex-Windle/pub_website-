@@ -6,7 +6,7 @@ import specials from './specials';
 
 ///////////////menu created below
 
-var $menu = $('#menu-content');
+var $beerMenu = $('.beer-menu');
 
 var url = "https://json-data.herokuapp.com/restaurant/menu/3";
 
@@ -23,14 +23,12 @@ $.ajax(url).then(function(object){
 				</div>`;
 	})
 
-	$menu.append(beerTitles);
+	$beerMenu.append(beerTitles);
 
 ////////////// Entree items below 
+	var $foodMenu = $('.food-menu');
 
 	var entreeTitles = object.entrees.map(function({item, description, price, allergies, favorite, spicy, vegan}){
-
-	// var $entreeIcon = $('.entree-icon');
-	var $menuTest = $('#menu-content');
 
 				var icon = ""; 
 
@@ -64,7 +62,7 @@ $.ajax(url).then(function(object){
 			</div>`;
 	}); //function entreeTitles 
 
-	$menu.append(entreeTitles);
+	$foodMenu.append(entreeTitles);
 					
 					//// Entree icon bar below ////
 

@@ -223,12 +223,24 @@ justify-content: space-between;
 		// border: 1px dotted black;
 		margin-top: 10px;
 		padding: 10px;
+		font-family: 'EB Garamond', serif;
 			#menu-content{
 			// border: 1px solid red;
+			h2, h3 {
+			text-align: center;
+			}
+			h3 {
+			text-decoration-line: line-through;
+			}
+			.beer-menu {
+			margin-bottom: 35px;
+			}
+
 			.menu-item {
 				.itemTitle{
 				font-weight: bold;
 				margin-top: 20px;
+				text-decoration: underline;
 				}
 				.itemInfoBlock{
 
@@ -252,9 +264,10 @@ justify-content: space-between;
 				.entree-name-icon-line {
 				display: flex;
 				flex-direction: row;
-				justify-content: space-between;
 				.entree-name{
 				font-weight: bold;
+				margin-right: 10px;
+				text-decoration: underline;
 				// margin-top: 20px;
 				}//end entree-name
 				}//end entree-name-icon-line
