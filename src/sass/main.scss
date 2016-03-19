@@ -251,11 +251,13 @@ justify-content: space-between;
 				flex-direction: row;
 				justify-content: space-between;
 					.itemPrice{
-					padding-top: 15px;
+					// padding-top: 15px;
 					}
 					.itemDescription {
 					width: 700px;
-					padding-top: 15px;
+					font-size: .9em;
+					font-weight: lighter;
+					// padding-top: 15px;
 
 					}
 				}//end item-descrip-price-line
@@ -278,11 +280,13 @@ justify-content: space-between;
 			flex-direction: row;
 			justify-content: space-between;
 					.entree-description{
-					padding-top: 15px;
+					font-size: .9em;
+					font-weight: lighter;
+					// padding-top: 15px;
 					width: 700px;
 					}
 					.entree-price{
-					padding-top: 15px;
+					// padding-top: 15px;
 					}
 			}//end entree descrip price line
 			}//end entree-item
