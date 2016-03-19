@@ -6,6 +6,26 @@ $bodybackgroundcolor: #2b4a2d;
 $boxcolor: darken(#f3ebe2, 5%);
 $header-color: #2b4a2d;
 
+@mixin default-button{
+	font-size: 1.5em;
+	padding: 10px;
+	margin-top: 20px;
+	border-radius: 5px;
+	
+	background-color: $boxcolor;
+	border: 2px solid $header-color;
+	color: black;
+	
+	&:hover{
+		color: white;
+		background-color: $header-color;
+		cursor: pointer;
+
+	}
+}
+
+.button { @include default-button;}
+
 *{
 	margin: 0;
 	padding: 0;
@@ -38,18 +58,23 @@ h1,h2,h3,h4,h5,h6, .tab-names{
 		padding-bottom: 12px;
     	padding-right: 10px;
 		transform: 2s all ease-in-out;
+		height: 80px;
 	}
 	img:hover{
 		transform: rotate(0.10turn);
-		transition-duration: 1s;
+		transition-duration: 1.2s;
 	}
 	h1{
 		float:right;//new
 		line-height: 80px;
 	}
 	i{
-		font-size: 1em;
+		font-size: 1.1em;
 		padding: 0 2px 0 2px;
+		&:hover{
+			color: darken(white, 15%);
+			cursor: pointer;
+		}
 	}
 }
 
@@ -108,6 +133,9 @@ h1,h2,h3,h4,h5,h6, .tab-names{
 			margin-top: 10px;
 			font-size: 1.1em;
 			}
+		.todays-special{
+			outline: 5px solid red;
+		}
 		
 	}
 
@@ -142,6 +170,7 @@ justify-content: space-between;
 				border-bottom: 1px dotted black;
 				padding: 10px 15px 10px 15px;
 				background-color: #DCDBDB;
+				cursor: pointer;
 				transition: all 0.3s ease-in-out;
 			}
 			input:checked ~ div.tab-content{
@@ -183,7 +212,7 @@ justify-content: space-between;
 		}
 		.menu {
 		// border: 1px dotted black;
-		margin: 10px;
+		margin-top: 10px;
 		padding: 10px;
 			#menu-content{
 			// border: 1px solid red;
@@ -252,23 +281,7 @@ justify-content: space-between;
 				width: 50%;
 				height: 80px;
 			}
-			button{
-				font-size: 1.5em;
-				padding: 10px;
-				margin-top: 20px;
-				border-radius: 5px;
-				
-				background-color: lighten($header-color, 15%);
-				border: none;
-				color: black;
-				
-				&:hover{
-					color: white;
-					background-color: $header-color;
-					cursor: pointer;
-
-				}
-			}
+			
 		}
 		.reviews {
 		margin: 10px;
@@ -277,7 +290,7 @@ justify-content: space-between;
 	.food-photos {
 		background-color: $bodybackgroundcolor;
 		display: flex;
-		margin: 30px;
+		margin: 58px;
 		// margin-bottom: 100px;
 		flex-direction: column;
 		justify-content: space-around;
@@ -285,6 +298,7 @@ justify-content: space-between;
 		img {
 		margin-top: 20px;
 		width: 100%;
+		border: 3px solid black;
 		}//end img
 	} //end food photos
 }//end main
@@ -347,21 +361,23 @@ footer {
 	}
 	.main{
 		flex-direction: column;
-		.tabs-section li{
+		.tabs-section {
+			margin: auto;
+			width: 97%;
+
+			li{
 			display: block;
 			width: 100%;
 			margin: auto;
-			input, label{
-				display: none;
-			}
-			div.tab-content{
-				display: block;
-				width: 80%;
-				position: relative;
-				#menu-content{
+				input:first-of-type, label:first-of-type{
+					display: none;
+				}
+				div.tab-content{
 					display: block;
-									position: relative;
-
+					width: 100%;
+					position: static;
+					margin:0;
+					border: 3px solid black;
 				}
 			}
 		}
@@ -370,11 +386,8 @@ footer {
 		flex-direction: row;
 		justify-content: space-around;
 	}
-	.main .tabs-section, .tab-content{ 
-		width: 100%;
-		margin: 10px;
 
-	}
+	
 }
 
 @media (max-width: 690px){
