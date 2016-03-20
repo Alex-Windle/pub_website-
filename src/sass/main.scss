@@ -39,7 +39,7 @@ html{
 p{
 	font-family: 'EB Garamond', serif;
 }
-h1,h2,h3,h4,h5,h6, .tab-names{
+h1,h2,h3,h4,h5,h6, .tab-names, #seating-preference {
 	font-family: 'Quicksand', sans-serif;
 }
 
@@ -227,11 +227,8 @@ justify-content: space-between;
 		font-family: 'EB Garamond', serif;
 			#menu-content{
 			// border: 1px solid red;
-			h2, h3 {
+			h2 {
 			text-align: center;
-			}
-			h3 {
-			text-decoration-line: line-through;
 			}
 			.beer-menu {
 			margin-bottom: 35px;
@@ -309,7 +306,29 @@ justify-content: space-between;
 				width: 50%;
 				height: 80px;
 			}
-			
+			form > .styled-select-box > #seating-preference{
+			background: transparent;
+			border: 1px dashed red;
+		    width: 270px;
+		    // padding: 5px;
+		    margin-left: 9px;
+		    line-height: 1;
+		    font-size: 15px;
+		    border: 0;
+		    border-radius: 0;
+		    height: 34px;
+		    -webkit-appearance: none;
+			}
+			form > .styled-select-box {
+			width: 270px;
+			height: 34px;
+			margin-top: 5px;
+			border-radius: 3px;
+			overflow: hidden;
+			background: url('../images/down-arrow-square.png') no-repeat right white;
+			background-size: 35px 35px;
+			border: 1px solid black;
+			}	
 		}
 		.reviews {
 		margin: 10px;
