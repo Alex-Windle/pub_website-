@@ -136,10 +136,33 @@ h1,h2,h3,h4,h5,h6, .tab-names, #seating-preference {
 			margin-top: 10px;
 			font-size: 1.1em;
 			}
-		.todays-special{
-			outline: 5px solid red;
+		.address-phone-hrs, .map-directions-block {
+			// border: 1px solid green;
+			display: inline-block;
+			font-size: 16px;
+			letter-spacing: -0.5px;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			.address-block, .open-hours-block{
+				// border: 1px dotted red;
+				margin: 0;
+				font-size: 16px;
+			}
 		}
-		
+		a {
+			// border: 1px solid blue;
+			text-decoration: none;
+			margin: 20px 0 20px 0;
+			color: black;
+			font-size: 22px;
+			font-weight: bolder;
+			letter-spacing: .5px;
+			font-family: 'Quicksand', sans-serif;
+			:hover {
+			text-decoration: underline;
+			}
+		}	
 	}
 
 	
