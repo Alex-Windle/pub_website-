@@ -311,7 +311,7 @@ justify-content: space-between;
 			border: 1px dashed red;
 		    width: 270px;
 		    // padding: 5px;
-		    margin-left: 9px;
+		    padding-left: 9px;
 		    line-height: 1;
 		    font-size: 15px;
 		    border: 0;
@@ -321,10 +321,10 @@ justify-content: space-between;
 			}
 			form > .styled-select-box {
 			width: 270px;
-			height: 34px;
+			height: 35px;
 			margin-top: 5px;
 			border-radius: 3px;
-			overflow: hidden;
+			// overflow: hidden;
 			background: url('../images/down-arrow-square.png') no-repeat right white;
 			background-size: 35px 35px;
 			border: 1px solid black;
